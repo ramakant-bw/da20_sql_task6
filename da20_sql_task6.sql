@@ -5,7 +5,7 @@
 
 
 --6.A Creating 3 views on joins
-  -----------------------------
+
 
 --1.Creating view for artist and his album (Inner Join)
 
@@ -31,6 +31,7 @@ Select * from Customer_care
 
 --------------------------------------------------------------------------------------------------
 
+
 --3. Creating View For Customer and His Bought Track (Right Join)
 
 Create View Sold_track As
@@ -46,7 +47,7 @@ Select * from Sold_track;
 
 
 --6.B Creating 3 Views On  Where, Group By , Having , Order By
-  -------------------------------------------------------------
+  
 
 -- 1. Creating View On Customer Who Live In 'New York' City Using - 'Where'
 
@@ -87,7 +88,7 @@ Select * From c_Total_bill;
 
 
 --6.C Creating 3 Views On Joins with Where, Group By, Having, Order By
-  --------------------------------------------------------------------
+  
 
 
 -- 1. Creating View For Customer From 'USA' and Buy 'Walk On Water' Track - Using 'Join with Where' 
@@ -131,7 +132,7 @@ Select * From Top_10
 
 
 -- 6. D Creating Views On Multi Join, cte, subquery 
-   ------------------------------------------------
+   
 
 -- 1. Creating View For List Of Album Titles And The Unit Prices For The Artist "Aerosmith".
 
@@ -154,7 +155,7 @@ Create View USA_Cust As
 		SELECT customer_id, first_name, last_name, city
 		FROM customer
 		WHERE country = 'USA'
-	)
+		)
 	SELECT customer_id, first_name, last_name, city
 	FROM USACustomers;
 

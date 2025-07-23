@@ -75,7 +75,7 @@ Select * From c_Total_bill;
 --------------------------------------------------------------------------------------------------
 
 
-3. Creating View For Customer Who Have More Then 13$ Bill Using - 'Group By And Having'
+--3. Creating View For Customer Who Have More Then 13$ Bill Using - 'Group By And Having'
 
     Select c.First_name, Sum(il.Unit_price) As Total_bill
 	From customer as c inner join invoice_line as il
